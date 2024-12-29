@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <!------------------------------------------Navbar------------------------->
+       
+        <div class="navbar"  data-aos="fade-up" data-aos-delay="10">       
+            <div class="logo-div">
+                <h2>BURGER <span>KING</span></h2>
+            </div>
+            <div class="navigation-link-div">
+                <div class="home-div">
+                    <i class="fa-solid fa-bars"></i>
+                    <li><a href="">Home</a></li>
+                </div>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Service</a></li>
+
+            </div>
+            <div class="cart-search-div">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>0</p>
+            </div>
+            <div class="login-signup-btn-div">
+                <button class="signin-btn"><i class="fa-solid fa-user"></i> sign in</button>
+                <button class="login-btn"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-----------------------------------Home section---------------->
+    <section>
+        <div class="home-section">
+            
+            <div class="left"  data-aos="fade-right">
+                <h1>ORDER <span>YOUR</span></h1>
+                <p class="fav-food">favourite Foods</p>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde eaque rem, sunt, atque,
+                    nobis ipsam nesciunt saepe natus autem odit debitis doloremque quae ipsum sit dicta inventore
+                    architecto soluta? Asperiores unde cupiditate eaque laboriosam quas est vero facilis quidem dicta
+                    architecto, perferendis consequatur quam velit ab odio voluptatum soluta debitis.</p>
+                <h5>Total Order: $24.30</h5>
+                <button><i class="fa-solid fa-right-to-bracket"></i> Buy Now</button>
+
+                <div class="gallery-wrap">
+                    <button id="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                    <div class="gallery">
+                        <div>
+                            <span><img src="./public/image/french fries.jpg" alt=""></span>
+                            <span><img src="./public/image/hot dog.jpg" alt=""></span>
+                            <span><img src="./public/image/mix-food.jpg" alt=""></span>
+                        </div>
+                        <div>
+                            <span><img src="./public/image/noodels.jpg" alt=""></span>
+                            <span><img src="./public/image/pasta.jpg" alt=""></span>
+                            <span><img src="./public/image/pizza.jpg" alt=""></span>
+                        </div>
+                    </div>
+                    <button><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+           
+            <div class="right"  data-aos="fade-left">
+                <div class="right-img">
+                    <img src="./public/image/mix-food.jpg" alt="">
+                    <div class="badge">
+                        <p>Salad *4.7</p>
+                        <button><i class="fa-solid fa-clock"></i>10-18 mins</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
